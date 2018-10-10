@@ -1,0 +1,11 @@
+{
+  "name": "mongo-docker-shell",
+  "version": "1.0.0",
+  "description": "A simple shell application that uses Docker to run a containerized MongoDB",
+  "author": "Scott Byers",
+  "license": "MIT",
+  "scripts": {
+    "start": "docker-compose -f mongo.yml up -d",
+    "stop": "docker-compose -f mongo.yml down"
+  }
+}

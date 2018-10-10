@@ -1,3 +1,8 @@
+.DS_Store
+
+# not a best practice for long-running projects, but easier for one-offs
+package-lock.json
+
 # Logs
 logs
 *.log
