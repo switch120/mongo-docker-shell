@@ -45,7 +45,7 @@ example:
 ## Starting Over
 Did something come off the rails along the way? Want a fresh Database? You can delete the `Mongo` Docker Image, and the next time the evironment is started it will be pulled fresh from the Docker Repository. This is done in two steps.
 
-* **Step 1** find the `image id` of the Mongo image
+* **Step 1** find the `image id` of the Mongo image using `docker image ls`
 * **Step 2** paste this id in to the following command: `docker rmi image_id --force`, e.g., `docker rmi 052ca8f03af8 --force`
 
 ## Configuring Mongo
