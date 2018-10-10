@@ -54,8 +54,9 @@ To set additional config options, or change the defaults, edit the `mongo.yml` f
 ### Troubleshooting
 * Port 27017 already in use
     * A Mongo container is probably already running
-    * Check running processes with `docker ps`
-    * If another Mongo conatiner is running, kill it with `docker kill [containerid]`
+    * Try another `npm run stop`
 * `npm run stop` didn't stop the Mongo container
     * Happens occasionally. Usually another `npm run stop` will kill it
-    * If problem persists, kill the container manually (see Port in use above)
+    * If problem persists, kill the container manually:
+        * Check running processes with `docker ps`, copy container id
+        * If another Mongo container is running, kill it with `docker kill [containerid]`
